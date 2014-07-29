@@ -4,7 +4,9 @@ Runs on the Tel Aviv Makers ATtami board.
 
 ## Prerequisites
 
- - AVR GCC
+ - avr-gcc
+ - avr-libc
+ - avrdude
  - ATMEL USB ISP (USBASP) programmer
 
 Recommended to use the following udev rule:

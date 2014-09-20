@@ -1,32 +1,35 @@
+
 #include <avr/io.h>
-// F_CPU frequency to be defined at command line
 #include <util/delay.h>
 
-// LED is on pin 2, PB3
-#define LED      PB3
-#define DELAY_MS 500
+int
+main (void)
+{
+	DDRB |= _BV(DDB0);
+	DDRB |= _BV(DDB1);
+	DDRB |= _BV(DDB2);
+	DDRB |= _BV(DDB3);
+	DDRB |= _BV(DDB4);
+	while(1) {
+		PORTB ^= _BV(PB0);
+		_delay_ms(500);
+		PORTB ^= _BV(PB0);
 
-int main () {
-	uint8_t high = 0;
-	uint16_t ms = 0;
+		PORTB ^= _BV(PB1);
+		_delay_ms(500);
+		PORTB ^= _BV(PB1);
 
-	DDRB |= (1 << LED);
-	PORTB &= ~(1 << LED);
+		PORTB ^= _BV(PB2);
+		_delay_ms(500);
+		PORTB ^= _BV(PB2);
 
-	while (1) {	
-		high = !high;
+		PORTB ^= _BV(PB3);
+		_delay_ms(500);
+		PORTB ^= _BV(PB3);
 
-		if (high) {
-			PORTB |= (1 << LED);
-		} else {
-			PORTB &= ~(1 << LED);
-		}
-
-		for (ms = DELAY_MS; ms > 0; ms -= 10) {
-			_delay_ms(10);
-		}
-	}
-
-	return 0;
+		PORTB ^= _BV(PB4);
+		_delay_ms(500);
+		PORTB ^= _BV(PB4);
+        }
 }
 

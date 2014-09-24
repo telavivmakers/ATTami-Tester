@@ -9,11 +9,11 @@ Runs on the Tel Aviv Makers ATtami board.
  - avrdude
  - ATMEL USB ISP (USBASP) programmer
 
-Recommended to use the following udev rule:
+Recommended to use the udev rule:
 
 ```bash
-$ cat /etc/udev/rules.d/98-usbasp.rules
-SUBSYSTEM=="usb", ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="05dc", GROUP="users", MODE="0666"
+$ cp 98-usbasp.rules /etc/udev/rules.d/
+$ udevadm control --reload-rules
 ```
 
 ## Usage

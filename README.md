@@ -1,4 +1,4 @@
-# ATtiny85 Blink
+# ATTami-Tester
 
 Runs on the Tel Aviv Makers ATtami board.
 

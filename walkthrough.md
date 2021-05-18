@@ -50,5 +50,5 @@ if it doesn't recognize the device, check the pins. jig will be made soon.
  Maybe try pressing the restart button if it doesn't work.\
  19. code should work now.
  
-DONE!!!!
+DONE!!!! 🍻🎉🎊🥳🥂
 wiki has instructions on how to be able to upload straight from arduino IDE I think.

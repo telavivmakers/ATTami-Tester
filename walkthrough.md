@@ -2,8 +2,8 @@
 2. connect boot usb (usbasp) connector to chip, 
 	make sure white dot corresponds to dot on ATTiny.
 	when connecting, 1 red and 1 blue leds should turn on in the ATTami.
-3. check dmesg to see usb is connected. 
-4. install arduino ide so avrdude will work.
+3. enter `dmesg` in a terminal to see that the usb is connected. should show ****fill in later**** 
+4. install arduino ide (so avrdude will work).
 5. run `avrdude -c usbasp -p attiny85 -v` to see that the fuses are all ok.
 	(usbasp is the usb stick, attiny85 is the chip.)
 6. clone [ATTami-tester repo](https://github.com/telavivmakers/ATTami-Tester)

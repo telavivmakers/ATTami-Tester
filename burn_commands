@@ -1,0 +1,7 @@
+
+avrdude -v -pattiny85 -cusbasp -e -Uefuse:w:0xFE:m -Uhfuse:w:0b11011111:m -Ulfuse:w:0xF1:m -Uflash:w:./ATTami-Tester.hex:i
+
+
+avrdude -v -pattiny85 -cusbasp -e -Uefuse:w:0xFE:m -Uhfuse:w:0b11011111:m -Ulfuse:w:0xF1:m -Uflash:w:./t85_entry_on_power_on_no_pullup_fast_exit_on_no_USB.hex:i
+
+

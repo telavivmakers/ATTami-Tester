@@ -1,6 +1,6 @@
 # ATTami-Tester
 
-Runs on the Tel Aviv Makers ATtami board.
+Runs on the Tel Aviv Makers [ATtami](https://github.com/telavivmakers/at-tami) board.
 
 ## Prerequisites
 
